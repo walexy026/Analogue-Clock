@@ -1,0 +1,76 @@
+/* FOOTER */
+.footer {
+    margin-top: 3rem;
+    padding: 0 5rem;
+  }
+  .footerLinks {
+    list-style: none;
+    padding-top: 2rem;
+    display: flex;
+    justify-content: space-around;
+    /* gap: 2rem; */
+    align-items: center;
+  }
+  .footerLogo {
+    list-style: none;
+    font-weight: 700;
+    margin-bottom: 2.3rem;
+    font-size: 36px;
+  }
+  .links li p {
+    font-size: 13px;
+    color: #5e6282;
+    width: 190px;
+  }
+  .links ul {
+    display: flex;
+    flex-direction: column;
+  }
+  .links ul li:nth-child(1) {
+    color: #080809;
+    padding-bottom: 2rem;
+    font-weight: 900;
+  }
+  .links ul li {
+      list-style: none;
+    color: #5e6282;
+    font-weight: 500;
+    padding-bottom: 1rem;
+  }
+  
+  .instagram {
+    background: conic-gradient(
+      from 180deg at 50% 50%,
+      #b8d2f1 0deg,
+      #f289aa 60deg,
+      #c68bf0 106.09deg,
+      #d164da 153.75deg,
+      #c963e8 221.25deg,
+      #bfc2e8 258.75deg,
+      #ffc999 288.75deg,
+      #d0d8c9 315deg,
+      #bad0f1 334.13deg,
+      #ced8cb 358.97deg,
+      rgba(255, 255, 255, 0) 360deg
+    );
+    color: #ffffff;
+    border-radius: 50%;
+    margin-bottom: 0.5rem;
+  }
+  .social {
+    display: flex;
+    align-items: center;
+    list-style: none;
+  }
+  .playStore {
+    padding-top: 1rem;
+    display: flex;
+    gap: 0.5rem;
+  }
+  footer span {
+    text-align: center;
+    display: block;
+    padding-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  
