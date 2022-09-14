@@ -65,4 +65,36 @@ header {
   .toggle .bar3 {
     transform: rotate(45deg) translate(-5px, -6px);
   }
-  
+  /* ANIMATION FOR THE NAVLINKS */
+@keyframes navlinksId {
+  from {
+    opacity: 0;
+    transform: rotateX(30deg);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(10px);
+  }
+}
+@media screen and (max-width: 768px) {
+    #hambuger {
+      display: block;
+      cursor: pointer;
+    }
+    /* THIS WILL TAKE EFFECT IN THE MOBILE VIEW */
+    .navLinks {
+      position: absolute;
+      right: 0px;
+      top: 15vh;
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+      height: 85vh;
+      background-color: #df6951;
+      width: 50vw;
+      color: blue;
+      transform: translateX(-200%);
+      transition: all ease-in-out 0.5s;
+      transform-style: preserve-3d;
+    }
+}

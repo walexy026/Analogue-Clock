@@ -1,3 +1,12 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    overflow-x: hidden;
+  }
+
+
 /* HEROSECTION */
 .heroSection {
     /* width: 100%; */
@@ -10,6 +19,53 @@
     z-index: -1;
     top: 0;
     transform: rotateY(0deg);
+  }
+  /* BREAKPOINTS FOR THE BACKGROUND IMAGES ACROSS VARIOUS SCREENSIZE */
+@media screen and (max-width: 1400px) {
+    .heroBackgrond img {
+      right: -10px;
+      transform: rotateY(0deg);
+    }
+  }
+  @media screen and (max-width: 1300px) {
+    .heroBackgrond img {
+      right: -28px;
+      transform: rotateY(23deg);
+    }
+  }
+  @media screen and (max-width: 1200px) {
+    .heroBackgrond img {
+      right: -78px;
+      transform: rotateY(26deg);
+    }
+    .heroSubOne h1 {
+      font-size: 3rem;
+      width: 340px;
+    }
+    .heroSubOne p {
+      width: 330px;
+    }
+  }
+  @media screen and (max-width: 1100px) {
+    .heroBackgrond img {
+      display: none;
+      transform: rotateY(38deg);
+      overflow-x: hidden;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    /* .heroSubOne img { */
+    /* display: none; */
+    /* transform: rotateY(38deg); */
+    /* } */
+    .heroSubOne h1{
+      font-size: 2.1rem;
+      width: 273px
+    }
+    /* .heroSubOne p{
+      width: 200px;
+      font-size: 14px;
+    }  */
   }
   /* HEROSECTION */
 .heroSubOne {
@@ -34,6 +90,7 @@
     font-family: "Volkhov", serif;
   }
 
+  
   .heroSubOne h1 span{
     font-family: "Volkhov", serif;
   
@@ -535,3 +592,68 @@
     right: 15px;
     transform: translateY(-75px);
   }
+
+  @media screen and (max-width: 768px) {
+    #hambuger {
+      display: block;
+      cursor: pointer;
+    }
+    .heroSection {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .heroSubOne {
+      flex: 50%;
+    }
+    .heroImage {
+      flex: 50%;
+      padding-left: 5rem;
+    }
+    .heroSubOne h3 {
+      text-align: center;
+    }
+    .heroSubOne h1 {
+      font-size: 2.7rem;
+      /* width: 400px; */
+      text-align: center;
+    }
+    .heroSubOne p {
+      max-width: 300px;
+      /* width: 410px; */
+      text-align: center;
+    }
+    aside {
+      justify-content: center;
+    }
+    .servicesLists {
+      flex-direction: column;
+      gap: 3rem;
+    }
+  
+    .destinationCities {
+      flex-direction: column;
+    }
+    .stepsToBook {
+      flex-direction: column;
+    }
+    .stepText h2 {
+      width: 300px !important;
+    }
+    .tripPackage {
+      padding: 2rem !important;
+    }
+    .tripToRome {
+      transform: translate(150px, -150px) !important;
+    }
+    .testimonial {
+      flex-direction: column;
+    }
+    .testimonies h2 {
+      width: 95% !important;
+    }
+    .partners {
+      flex-direction: column;
+    }
+  }
+

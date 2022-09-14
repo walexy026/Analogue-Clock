@@ -73,4 +73,12 @@
     padding-top: 2rem;
     margin-bottom: 2rem;
   }
-  
+  @media screen and (max-width: 768px) {
+  footer {
+    padding: 0 !important;
+    text-align: center;
+  }
+  .footerLinks {
+    flex-direction: column;
+  }
+}
