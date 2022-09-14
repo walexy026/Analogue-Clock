@@ -1,5 +1,4 @@
-import React from 'react'
-import "./Main.css"
+import "./Main.css";
 
 const Main = () => {
   return (
@@ -9,7 +8,7 @@ const Main = () => {
       <section className="heroSection">
         <div className="heroSubOne">
           <div className="heroBackgrond">
-            <img src="./Assets/HeroBg.svg" alt="HeroBackGround" />
+            <img src="./Assets/heroBg.svg" alt="HeroBackGround" />
           </div>
           <h3>Best Destinations around the world</h3>
           <h1>Travel, <span>enjoy</span> and live a new and full life</h1>
@@ -26,7 +25,7 @@ const Main = () => {
           </aside>
         </div>
         <div className="heroImage">
-          <img src="./Assets/TravellerGirlPlane.svg" alt="TravellerGirl" />
+          <img src="./Assets/travellerGirlPlane.svg" alt="TravellerGirl" />
         </div>
       </section>
       {/* SERVICES SECTION  */}
