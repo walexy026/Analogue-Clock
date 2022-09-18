@@ -10,9 +10,9 @@ import "./Clock.css";
 
 //     <div className="main">
 //       <div className="clock">
-//         <span className="secs-hand"></span>
-//         <span className="min-hand"></span>
-//         <span className="hour-hand"></span>
+      // <span className="secs-hand" style={{transform: `rotateZ(${this.state.time.getSeconds()*6}deg)`}}></span>
+      // <span className="min-hand" style={{transform: `rotateZ(${this.state.time.getMinutes()*6}deg)`}}></span>
+      // <span className="hour-hand" style={{transform: `rotateZ(${this.state.time.getHours()*30}deg)`}}></span>
 //         <span className="middle-dot"></span>
         
 //         <span className="number one">1</span>
@@ -47,11 +47,11 @@ constructor(props) {
 componentDidMount(){
   this.timeId = setInterval(() => {
  this.setState({
-  time : new Date()
+  time  : new Date()
  })
   },  1000) 
 }
-componentDidMount(){
+componentWillMount(){
   clearInterval(this.timeId)
 }
   render() { 

@@ -32,8 +32,8 @@
   transform-origin: bottom;
   /* transform: translate(-50%, -100%); */
   position: absolute;
-  left: 50%;
-  top: 50%;
+  left: 49%;
+  top: 33%;
   width: 3px;
   height: 50px;
   background-color: blue;
@@ -42,8 +42,8 @@
   transform-origin: bottom;
   /* transform: translate(-50%, 0%); */
   position: absolute;
-  left: 50%;
-  top: 50%;
+  left: 49%;
+  top: 22.4%;
   background-color: yellow;
   height: 80px;
   width: 4px;
@@ -53,10 +53,10 @@
   transform-origin: bottom;
   position: absolute;
   left: 50%;
-  top: 50%;
+  top: 10.5%;
   background-color: red;
-  height: 3px;
-  width: 100px;
+  height: 118px;
+  width: 3px;
 }
 .number{
     position: absolute;
@@ -64,12 +64,12 @@
     font-size: 20px;
 }
 .one {
-    top: 10%;
-    left: 75%;
+    top: 9%;
+    left: 71%;
 }
 .two {
-    top: 27%;
-    left: 90%;
+    top: 25%;
+    left: 87%;
 }
 .three {
     top: 46%;
@@ -80,16 +80,16 @@
     left: 87%;
 }
 .five {
-    top: 84%;
-    left: 74%;
+    top: 85%;
+    left: 72%;
 }
 .six {
     top: 92%;
-    left: 49%;
+    left: 48%;
 }
 .seven {
-    top: 84%;
-    right: 74%;
+    top: 85%;
+    right: 72%;
 }
 .eight {
     top: 69%;
@@ -100,12 +100,12 @@
     right: 92%;
 }
 .ten {
-    top: 27%;
-    right: 88%;
+    top: 25%;
+    right: 85%;
 }
 .eleven {
-    top: 10%;
-    right: 75%;
+    top: 8%;
+    right: 70%;
 }
 .twelve {
   top: 10px;
