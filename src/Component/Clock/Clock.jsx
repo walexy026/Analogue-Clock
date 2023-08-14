@@ -2,19 +2,33 @@
 import "./Clock.css";
 
 // const Clock = () => {
+//   constructor(props); {
+//     super(props)
 
-   
-    
+//     state = {
+//        time : new Date()
+//     }
+//   }
+//   componentDidMount();{
+//     timeId = setInterval(() => {
+//    setState({
+//     time  : new Date()
+//    })
+//     },  1000)
+//   }
+//   componentWillMount();{
+//     clearInterval(timeId)
+//   }
+
 //   return (
-   
 
 //     <div className="main">
 //       <div className="clock">
-      // <span className="secs-hand" style={{transform: `rotateZ(${this.state.time.getSeconds()*6}deg)`}}></span>
-      // <span className="min-hand" style={{transform: `rotateZ(${this.state.time.getMinutes()*6}deg)`}}></span>
-      // <span className="hour-hand" style={{transform: `rotateZ(${this.state.time.getHours()*30}deg)`}}></span>
+//       <span className="secs-hand" style={{transform: `rotateZ(${props.state.time.getSeconds()*6}deg)`}}></span>
+//       <span className="min-hand" style={{transform: `rotateZ(${state.time.getMinutes()*6}deg)`}}></span>
+//       <span className="hour-hand" style={{transform: `rotateZ(${state.time.getHours()*30}deg)`}}></span>
 //         <span className="middle-dot"></span>
-        
+
 //         <span className="number one">1</span>
 //         <span className=" number two">2</span>
 //         <span className=" number three">3</span>
@@ -34,51 +48,67 @@ import "./Clock.css";
 // };
 
 // export default Clock;
-import React, { Component } from 'react'
+import React, { Component } from "react";
 
 export class Clock extends Component {
-constructor(props) {
-  super(props)
+  constructor(props) {
+    super(props);
 
-  this.state = {
-     time : new Date()
+    this.state = {
+      time: new Date(),
+    };
   }
-}
-componentDidMount(){
-  this.timeId = setInterval(() => {
- this.setState({
-  time  : new Date()
- })
-  },  1000) 
-}
-componentWillMount(){
-  clearInterval(this.timeId)
-}
-  render() { 
+  componentDidMount() {
+    this.timeId = setInterval(() => {
+      this.setState({
+        time: new Date(),
+      });
+    }, 1000);
+  }
+  componentWillMount() {
+    clearInterval(this.timeId);
+  }
+  render() {
     return (
       <div>
-         <div className="clock">
-         <span className="secs-hand" style={{transform: `rotateZ(${this.state.time.getSeconds()*6}deg)`}}></span>
-         <span className="min-hand" style={{transform: `rotateZ(${this.state.time.getMinutes()*6}deg)`}}></span>
-         <span className="hour-hand" style={{transform: `rotateZ(${this.state.time.getHours()*30}deg)`}}></span>
-         <span className="middle-dot"></span>
-        
-         <span className="number one">1</span>
-         <span className=" number two">2</span>
-         <span className=" number three">3</span>
-         <span className="number four">4</span>
-         <span className="number five">5</span>
-         <span className="number six">6</span>
-         <span className="number seven">7</span>
-         <span className="number eight">8</span>
-         <span className="number nine">9</span>
-         <span className="number ten">10</span>
-         <span className="number eleven">11</span>
-         <span className="number twelve">12</span>
+        <div className="clock">
+          <span
+            className="secs-hand"
+            style={{
+              transform: `rotateZ(${this.state.time.getSeconds() * 6}deg)`,
+            }}
+          ></span>
+          <span
+            className="min-hand"
+            style={{
+              transform: `rotateZ(${this.state.time.getMinutes() * 6}deg)`,
+            }}
+          ></span>
+          <span
+            className="hour-hand"
+            style={{
+              transform: `rotateZ(${this.state.time.getHours() * 30}deg)`,
+            }}
+          ></span>
+          <span className="middle-dot"></span>
+
+          <span className="number one">1</span>
+          <span className=" number two">2</span>
+          <span className=" number three">3</span>
+          <span className="number four">4</span>
+          <span className="number five">5</span>
+          <span className="number six">6</span>
+          <span className="number seven">7</span>
+          <span className="number eight">8</span>
+          <span className="number nine">9</span>
+          <span className="number ten">10</span>
+          <span className="number eleven">11</span>
+          <span className="number twelve">12</span>
         </div>
+        <h1>BUILT BY ME</h1>
       </div>
-    )
+    );
   }
 }
 
-export default Clock
+export default Clock;
